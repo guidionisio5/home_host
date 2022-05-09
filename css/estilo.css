@@ -1,20 +1,19 @@
-/*general*/
-body, textarea {
+/* general */
+body, textarea{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif
+    font-family: 'Montserrat';
 }
 
-h1, h2, h3 {
+h1,h2,h3{
     color: #333;
 }
 
-p {
+p{
     color: #70747A;
 }
 
-/* Início menu */
-.navbar-container {
+.navbar-container{
     background-color: #232A31;
     width: 100%;
     height: 80px;
@@ -23,40 +22,40 @@ p {
     box-sizing: border-box;
 }
 
-.logo {
+.logo{
     width: 50px;
     margin-top: 15px;
 }
 
-nav {
+nav{
     position: relative;
 }
 
-.nav-items {
+.nav-itens{
+    list-style: none;
     position: absolute;
-    /* Quando coloca position ganha coordenadas nessa ordem top, right, bottom, left */
     right: 0;
     margin: 0;
-    list-style: none;
     display: inline-block;
     height: 80px;
     line-height: 80px;
 }
 
-.nav-items li {
+.nav-itens li{
     display: inline-block;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-left: 25px;
+    color: aliceblue;
 }
 
-.nav-items li a {
-    color: #fff;
+.nav-itens li a{
+    color: aliceblue;
     text-decoration: none;
-    transition: .5s;
 }
 
-.nav-items li a:hover {
-    color: #ccc;
+.nav-itens li a:hover{
+    color: antiquewhite;
+    transition: .5s;
 }
 
 .default-btn{
@@ -70,14 +69,12 @@ nav {
     background-color: #22BB5F;
     color: #fff;
 }
-/* Fim menu */
 
-/* Início banner */
 .main-banner{
     background-image: url('../img/mainbanner.png');
-    padding: 10em 0;
-    background-size: cover;    
+    padding: 12em 0;
     background-position: center;
+    background-size: cover;
     position: relative;
 }
 
@@ -91,12 +88,12 @@ nav {
     font-size: 54px;
 }
 
-.main-banner p {
+.main-banner p{
     font-size: 32px;
 }
-/* Fim banner */
 
 /* Início especiabilidades */
+
 .specialties-container{
     padding: 5em 0;
 }
@@ -126,11 +123,11 @@ nav {
 }
 
 .fa-rocket{
-    color: #EF3F29;
+    color: orangered;
 }
 
 .fa-comments{
-    color: #EF8F29;
+    color: red;
 }
 
 .specialties-container ul li h3{
@@ -142,9 +139,7 @@ nav {
     line-height: 24px;
     color: #70747A;
 }
-/* Fim especiabilidades */
 
-/* Inicio Preços e Planos */
 .pricing-container{
     padding-bottom: 5em;
     text-align: center;
@@ -161,18 +156,22 @@ nav {
 
 .plans-container{
     display: flex;
-    /* Usa o espaço restante do elemento pai 
-    para distribuir os filhos de forma igual */
+    /* usa o espaço restante  do elemento pai para distribuição igualitaria entre os filhos */
     justify-content: space-between;
-    margin: 50px auto 0;
+    margin-top: 50px;
     width: 90%;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
 }
 
-.plan{
-    /*flex-grow
-    flex-shrink 
-    flex-basis*/
+.plans{
+    /* 
+    flex grow
+    flex shirink
+    flex basic
+    */
     flex: 1 1 200px;
     max-width: 275px;
     margin: 0 auto;
@@ -182,7 +181,7 @@ nav {
     padding: 0;
 }
 
-.plan li{
+.plan ul li{
     list-style: none;
     height: 50px;
     line-height: 50px;
@@ -194,12 +193,13 @@ nav {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background-color: #2CC76A;
+    background-color: #2cc76a;
     color: #fff;
     text-align: center;
+    /* para alinhar o texto na vertical dentro do item */
     line-height: 120px;
-    font-size: 18px;
     position: relative;
+    font-size: 18px;
     margin: 0 auto -50px;
 }
 
@@ -208,26 +208,24 @@ nav {
     padding-top: 50px;
     padding-bottom: 20px;
     background-color: #202b34;
-    font-size: 20px;
+    font-size:20px;
     color: #fff;
     font-weight: bold;
 }
 
 .plan .plan-btn{
-    background-color: #2CC76A;
+    background-color: #2cc76a;
     color: #fff;
     font-size: 24px;
     height: 75px;
-    line-height: 75px;
+    line-height: 75p;
     cursor: pointer;
 }
 
-.plan .recommended{
+.plan .recomended{
     background-color: #f45c57;
 }
-/* Fim Preços e Planos */
 
-/* Início Buscar Domínio */
 .searchdomain-container{
     background-color: #34454e;
     text-align: center;
@@ -242,7 +240,7 @@ nav {
 }
 
 .searchdomain-container p{
-    color: #d5d5d5;
+    color: #D5D5D5;
     font-size: 24px;
     margin-bottom: 25px;
 }
@@ -251,7 +249,7 @@ nav {
     display: block;
     position: relative;
     margin: 0 auto;
-    border:  none;
+    border: none;
     border-radius: 5px;
 }
 
@@ -260,4 +258,113 @@ nav {
     width: 60%;
     padding: 20px;
     font-size: 20px;
+}
+
+.searchdomain-container input[type=submit]{
+    background-color: #2cc76a;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.contact-container{
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+.contact-container{
+    font-size: 36px;
+}
+
+.contact-container p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-container input, .contact-container textarea{
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* 1 cima, 2 esq e dir, 3 bottom */
+    margin: 0px 10px 20px;
+}
+
+.contact-container textarea{
+    display: block;
+    position: relative;
+    margin-left:auto ;
+    margin-right: auto;
+    width: 468px;
+    height: 160px;
+}
+
+.contact-container input[type=submit]{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    background-color:#2cc76a;
+    color: #fff;
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+    .plans-container{
+        width: 95%;
+    }
+
+    .plan{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .plans-container, .specialties-container ul{
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (max-width: 576px){
+
+    .nav-itens li{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .plan {
+        max-width: 100%;
+    }
+
+    .searchdomain-container{
+        padding: 3em 2em;
+    }
+
+    .container .searchdomain-container input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-container{
+    padding: 3em 2em;
+    }
+    .contact-container input, .contact-container textarea{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
 }
